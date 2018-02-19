@@ -1,0 +1,19 @@
+#define MOTOR_ESQUERDA OUT_A
+#define MOTOR_DIREITA OUT_C
+#define MOTORES OUT_AC
+#define MOTOR_GARRA OUT_B
+#define MOTOR_PORTA OUT_B  // conexão com o outro cérebro
+#define SENSOR_COR_ESQUERDA IN_1
+#define SENSOR_COR_DIREITA IN_2
+#define SENSOR_US_ESQUERDA IN_3
+#define SENSOR_US_DIREITA IN_4
+#define SENSOR_GYRO IN_4 // teste
+#define SENSOR_US_GARRA IN_3 // teste
+
+
+task main ()
+{
+	TextOut(0, 0, "HelloWorld!");
+    Wait(2000);
+    //
+}

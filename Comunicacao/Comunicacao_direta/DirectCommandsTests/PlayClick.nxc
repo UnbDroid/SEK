@@ -1,0 +1,8 @@
+// Test program. Should be on the slave.
+
+task main () {
+  while(true) {
+    PlayFile("! Click.rso");
+    Wait(1000);
+  }
+}

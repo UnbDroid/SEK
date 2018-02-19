@@ -1,0 +1,56 @@
+/* 	
+
+	Codigo do Bruno Andreguetti para ler valores utilizando o sensor vermelho.
+
+ */
+
+sub BTCheck(int conn){
+	 if (!BluetoothStatus(conn)==NO_ERR){
+     ClearScreen();
+     TextOut(5,LCD_LINE2,"Erro");
+		 Wait(1000);
+		 Stop(true);
+	 }
+}
+
+int GetRemoteSensor()
+{
+	InputValuesType params;
+	
+	params.Port = IN_1;	
+	RemoteGetInputValues(CONN_BT1, params);
+	
+	return params.RawValue;
+}
+
+task main()
+{
+	int leitura;	
+
+	BTCheck(1);
+	RemoteSetInputMode(CONN_BT1, IN_1, SENSOR_TYPE_COLORRED, SENSOR_MODE_RAW);
+	while(true)
+	{
+		//RemoteKeepAlive(1);
+		leitura = GetRemoteSensor();
+		ClearLine(LCD_LINE1);
+		NumOut(0, LCD_LINE1, leitura);
+		if(leitura > 300)
+		{
+       RemoteSetOutputState(CONN_BT1, OUT_B, 60, OUT_MODE_MOTORON, OUT_REGMODE_IDLE, 0, OUT_RUNSTATE_RUNNING, 0);
+		} else {
+		   RemoteSetOutputState(CONN_BT1, OUT_B, -60, OUT_MODE_MOTORON, OUT_REGMODE_IDLE, 0, OUT_RUNSTATE_RUNNING, 0);
+		}
+		Wait(100);
+	}
+	/*
+	byte sensores[4];
+
+	sensores[0] = Sensor(IN_1);
+	sensores[1] = Sensor(IN_2);
+	sensores[2] = Sensor(IN_3);
+	sensores[3] = Sensor(IN_4);
+
+	BluetoothWrite(sensores, 0);
+	*/	
+}

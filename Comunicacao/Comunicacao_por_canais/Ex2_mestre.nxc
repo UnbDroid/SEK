@@ -1,0 +1,30 @@
+//MASTER
+#define BT_CONN 1
+#define OUTBOX 5
+#define INBOX 1
+#define CLEARLINE(L) \
+TextOut(0,L," ");
+sub BTCheck(int conn){
+    if (!BluetoothStatus(conn)==NO_ERR){
+        TextOut(5,LCD_LINE2,"Error");
+        Wait(1000);
+        Stop(true);
+    }
+}
+task main(){
+    int ack;
+    int i;
+    BTCheck(BT_CONN);
+    TextOut(10,LCD_LINE1,"Master sending");
+    while(true){
+        i = Random(512);
+        CLEARLINE(LCD_LINE3);
+        NumOut(5,LCD_LINE3,i);
+        ack = 0;
+        SendRemoteNumber(BT_CONN,OUTBOX,i);
+        until(ack==0xFF) {
+            until(ReceiveRemoteNumber(INBOX,true,ack) == NO_ERR);
+        }
+        Wait(250);
+    }
+}
