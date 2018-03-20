@@ -8,11 +8,27 @@ Este repositório tem como objetivo de armazenar e conter a documentação da SE
 
 ### Organização do Repositório
 
-Foi dividido em 3 partes:
+Estes assuntos é melhor descrito no [wiki](https://github.com/UnbDroid/SEK/wiki) pois é possível criar páginas e fazer o link mais facilmente. Então a estrutura geral deste repositório dividida em 3 partes, que é dividido em mais partes:
 
-* Software
-* Hardware 
-* Competição
+* [Programação](https://github.com/UnbDroid/SEK/wiki/Programacao)
+    * [X] [NXC para Linux](https://github.com/UnbDroid/SEK/wiki/NXC-para-Linux)
+    * [ ] [Giroscópio](https://github.com/UnbDroid/SEK/wiki/Giroscopio)
+    * [ ] [Manipulando arquivos](https://github.com/UnbDroid/SEK/wiki/Manipulando-arquivos)
+    * [ ] [Códigos para calibragem](https://github.com/UnbDroid/SEK/wiki/Codigos-para-calibragem)
+    * [ ] [Sensores de cor e filtragem](https://github.com/UnbDroid/SEK/wiki/Sensores-de-cor-e-filtragem)
+    * [ ] [Sensor US e filtragem](https://github.com/UnbDroid/SEK/wiki/Sensor-US-e-filtragem)
+    * [ ] [Musicas, tons e frequências](https://github.com/UnbDroid/SEK/wiki/Musicas,-tons-e-frequencias)
+    * [ ] [Debugando códigos](https://github.com/UnbDroid/SEK/wiki/Debugando-codigos)
+    * [X] [Comunicação entre dois cérebros](https://github.com/UnbDroid/SEK/wiki/Comunicacao-entre-dois-cerebros)
+        * [X] [Bluetooth](https://github.com/UnbDroid/SEK/wiki/Bluetooth)
+        * [ ] [Cabos](https://github.com/UnbDroid/SEK/wiki/Cabos)
+    * [ ] [Paralelismo](https://github.com/UnbDroid/SEK/wiki/Paralelismo)
+    * [ ] [Modularização](https://github.com/UnbDroid/SEK/wiki/Modularizacao)
+* [Estrutura mecânica](https://github.com/UnbDroid/SEK/wiki/Estrutura-mecanica)
+    * [ ] [Posição de rodas e esteiras](https://github.com/UnbDroid/SEK/wiki/Posicao-de-rodas-e-esteiras)
+    * [ ] [Concentração e distribuição do peso](https://github.com/UnbDroid/SEK/wiki/Concentracao-e-distribuicao-do-peso)
+* [Competição](https://github.com/UnbDroid/SEK/wiki/Competicao)
+    * [ ] [Cuidados com pilhas](https://github.com/UnbDroid/SEK/wiki/Cuidados-com-pilhas)
 
 ### Software
 
