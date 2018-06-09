@@ -11,18 +11,19 @@
 #define BLUE   5
 #define YELLOW 6
 
-// To use the HT Color Sensor, you will need 4 variables, to which the sensor will return the read values. Those variables are listed below:
+// To use the HT Color Sensor, you will need 4 variables, to which the sensor will return the reading's values. Those variables are listed below:
 byte num, red, green, blue, white, color;
 // Note that if you are using more than one sensor in your robot, it's better and more practical if you do *not* use the same variables for both sensors
 
 // In most cases, you will need to differentiate multiple colors. In order to do that, we highly recommend you to go through a process of calibration to collect
-// the intervals of values that each variable assume when the sensor is pointed at each color. After that, a great method is creating a function that analyses the
-// variables values and decides which color the sensor is seeing.
+// the ranges of values that each variable assume when the sensor is pointed at each color. After that, a great method is to create a function that analyses the
+// variables' values and decides which color the sensor is pointed at.
 // We also recommend that you primarily use the "num" value to differentiate colors. If this value is not enough to choose the color precisely, use the other variables,
-// according to the values obtained in calibration, to take preciser decisions.
+// according to the values obtained in calibration, to take more accurate decisions.
 
 // Here's an example of how to use the sensor
 sub detect_colors(){
+    // This is the function you'll call to read the sensor, first argument is the port, the others are where the function will store the reading's values(they must be in this order)
     ReadSensorHTColor2Active(HT_COLOR, num, red, green, blue, white);
 
     // The values listed below are just examples and depend on the calibration
@@ -57,7 +58,7 @@ sub detect_colors(){
 
 task main(){
 
-	// When setting the HT Color Sensor, pay attention to the fact that you need to firstly set the port to Lowspeed, and only after that use SetHTColor2Mode() function
+	// When setting the HT Color Sensor, note that you need to set the port to Lowspeed first, and only after that use SetHTColor2Mode() function
     SetSensorLowspeed(HT_COLOR);
     SetHTColor2Mode(HT_COLOR, HT_CMD_COLOR2_ACTIVE);
     // The second argument of this function sets the sensor mode. Is up to you to test and decide in the calibration which mode to use, here's the link for every possible mode:
