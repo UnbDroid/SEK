@@ -11,6 +11,7 @@ Este repositório tem como objetivo de armazenar e conter a documentação da SE
 Estes assuntos é melhor descrito no [wiki](https://github.com/UnbDroid/SEK/wiki) pois é possível criar páginas e fazer o link mais facilmente. Então a estrutura geral deste repositório dividida em 3 partes, que é dividido em mais partes:
 
 * [Programação](https://github.com/UnbDroid/SEK/wiki/Programacao)
+    * [X] [Atualizando Firmware NXT](https://github.com/UnbDroid/SEK/wiki/Atualizando-Firmware-NXT)
     * [X] [NXC para Linux](https://github.com/UnbDroid/SEK/wiki/NXC-para-Linux)
     * [ ] [Giroscópio](https://github.com/UnbDroid/SEK/wiki/Giroscopio)
     * [ ] [Manipulando arquivos](https://github.com/UnbDroid/SEK/wiki/Manipulando-arquivos)
