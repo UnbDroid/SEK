@@ -1,0 +1,29 @@
+//SLAVE
+#define BT_CONN 0
+#define INBOX 5
+#define OUTBOX 1
+
+sub BTCheck(int conn){
+    if(!BluetoothStatus(conn)==NO_ERR){
+        TextOut(5,LCD_LINE2,"Error");
+        Wait(1000);
+
+    }
+}
+task main(){
+    string sensor1;
+    SetSensorTouch(IN_1);
+
+    BTCheck(BT_CONN); //check master connection
+    while(true){
+        if(Sensor(IN_1) == 1)
+            sensor1 = "Press";
+        else
+            sensor1 = "NoPss";
+        TextOut(10,LCD_LINE1,"Slave Test");
+        TextOut(0,LCD_LINE2,"Sensor 1:");
+        SendRemoteString(BT_CONN, OUTBOX,sensor1);
+        TextOut(10,LCD_LINE3,sensor1);
+        Wait(100);
+    }
+}

@@ -1,0 +1,41 @@
+//SLAVE
+#define BT_CONN 0
+#define INBOX 5
+#define OUTBOX 1
+
+sub BTCheck(int conn){
+    if (!BluetoothStatus(conn)==NO_ERR){
+        TextOut(5,LCD_LINE2,"Error");
+        Wait(1000);
+        Stop(true);
+    }
+}
+task main(){
+    int numero;
+    string sensor;
+    SetSensorTouch(IN_4);
+    BTCheck(BT_CONN); //check master connection
+    while(true){
+        Wait(100);
+        TextOut(10,LCD_LINE1,"Slave Test");
+        TextOut(0,LCD_LINE2,"Sensor Master:");
+        numero = -2;
+        if (ReceiveRemoteNumber(INBOX,true,numero) != STAT_MSG_EMPTY_MAILBOX)
+        {
+            TextOut(10,LCD_LINE3,"Pressed");
+            numero = Sensor(IN_4);
+            SendResponseNumber(OUTBOX, numero);
+        }
+        else
+        {
+            TextOut(10,LCD_LINE3,"NoPress");
+        }
+        if(Sensor(IN_4) == 1)
+            sensor = "Pressed";
+        else
+            sensor = "NoPress";
+        TextOut(0,LCD_LINE4,"Sensor Slave:");
+        TextOut(10,LCD_LINE5,sensor);
+        Wait(100);
+    }
+}
