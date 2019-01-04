@@ -60,14 +60,6 @@ Estes assuntos é melhor descrito no [wiki](https://github.com/UnbDroid/SEK/wiki
 * Movimento de garras;
 * Cuidado com o posicionamento do cerebro
 
-### Competição
-
-* Levar em consideração a existência de rampas;
-* Não ser como a Asimov;
-* Possibilidade de mudança nas regras;
-* Cobrar o edital oficial;
-* Começar com tempo extra;
-* Cuidado com as pilhas.
 
 ### Lista de desejo de peças
 
