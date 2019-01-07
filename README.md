@@ -28,4 +28,4 @@ Você acabou de entrar na DROID, talvez nunca tenha programado um robô e muito 
 
 Após competir na IEE-SEK, sinta-se livre ~~e coagido~~ para contribuir com este repositório! Não deixe que outras pessoas passem pelo mesmo problema que você tenha passado.
 
-Você pode aprender a contribuir na [Wiki](https://github.com/UnbDroid/SEK/wiki).
+Você pode aprender a contribuir na [Wiki](https://github.com/UnbDroid/SEK/wiki#contribuindo-para-o-repositório).
