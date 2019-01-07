@@ -2,7 +2,7 @@
 
 <br>
 
-<img src="https://github.com/UnbDroid/SEK/blob/master/docs/wiki_docs/img/logo2.png" width="900"/>
+<img src="https://github.com/UnbDroid/SEK/blob/master/docs/wiki_docs/img/logo2.png" width="500"/>
 
 <br>
 
