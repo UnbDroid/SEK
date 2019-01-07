@@ -1,4 +1,5 @@
 # Standard Educational Kit - Droid
+![](https://github.com/UnbDroid/SEK/blob/master/docs/wiki_docs/img/logo.png)
 
 ## Sobre o Repositório
 
