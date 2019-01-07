@@ -1,8 +1,8 @@
-# Standard Educational Kit - Droid
+
 
 <br>
 
-<img src="https://github.com/UnbDroid/SEK/blob/master/docs/wiki_docs/img/logo2.png" width="700"/>
+<img src="https://github.com/UnbDroid/SEK/blob/master/docs/wiki_docs/img/logo2.png" width="900"/>
 
 <br>
 
