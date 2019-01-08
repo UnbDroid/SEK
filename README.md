@@ -12,7 +12,7 @@ Este repositório tem o objetivo de aprensentar a competição IEEE-SEK, introdu
 
 Além de tudo, o repositório também serve para manter registro de equipes passadas. Desde as equipes e seus respectivos membros à bibliotecas de funções e implementações criadas para competições passadas.
 
-Esperamos que com este repositório novos membros tenha maior acesso a informações e conceitos, podendo assim apresentar em cada ano um melhor desempenho geral, diminuindo as dificuldades.
+Esperamos que com este repositório novos membros tenham maior acesso a informações e conceitos, podendo assim apresentar em cada ano um melhor desempenho geral, diminuindo as dificuldades.
 
 ## Por Onde Começar?
 
